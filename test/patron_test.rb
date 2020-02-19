@@ -21,8 +21,14 @@ class MerchantTest < Minitest::Test
 
   end
 
-  def test_if_it_can_retrieve_interests
+  def test_if_it_can_hold_interests
     assert_equal [], @patron_1.interests
 
+  end
+
+  def test_if_it_can_add_interests
+  @patron_1.add_interest("Dead Sea Scrolls")
+  @patron_1.add_interest("Gems and Minerals")
+    assert ["Dead Sea Scrolls", "Gems and Minerals"]
   end
 end
