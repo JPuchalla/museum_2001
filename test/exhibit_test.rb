@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 
 
-class MerchantTest < Minitest::Test
+class ExhibitTest < Minitest::Test
   def setup
     @exhibit = Exhibit.new({name: "Gems and Minerals", cost: 0})
   end

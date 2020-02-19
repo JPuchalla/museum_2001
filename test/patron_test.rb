@@ -4,9 +4,11 @@ require 'minitest/autorun'
 require 'minitest/pride'
 
 
-class MerchantTest < Minitest::Test
+class PatronTest < Minitest::Test
   def setup
     @patron_1 = Patron.new("Bob", 20)
+    @patron_2 = Patron.new("Sally", 20)
+    @patron_3 = Patron.new("Johnny", 5)
   end
 
   def test_if_it_exists
