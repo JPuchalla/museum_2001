@@ -20,4 +20,9 @@ class MerchantTest < Minitest::Test
 
 
   end
+
+  def test_if_it_can_retrieve_interests
+    assert_equal [], @patron_1.interests
+
+  end
 end
