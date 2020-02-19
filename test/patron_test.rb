@@ -13,4 +13,11 @@ class MerchantTest < Minitest::Test
     assert_instance_of Patron, @patron_1
 
   end
+
+  def test_if_it_can_hold_attributes
+    assert_equal "Bob",  @patron_1.name
+    assert_equal 20,  @patron_1.spending_money
+
+
+  end
 end
