@@ -31,6 +31,8 @@ class PatronTest < Minitest::Test
   def test_if_it_can_add_interests
   @patron_1.add_interest("Dead Sea Scrolls")
   @patron_1.add_interest("Gems and Minerals")
-    assert ["Dead Sea Scrolls", "Gems and Minerals"]
+    assert_equal ["Dead Sea Scrolls", "Gems and Minerals"], @patron_1.interests
   end
+
+  
 end

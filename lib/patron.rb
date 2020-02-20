@@ -1,13 +1,13 @@
 class Patron
-  def initialize(patron_1, spending_money)
-    @patron_1 = patron_1
-    @spending_money = 20
+  def initialize(name, spending_money)
+    @name = name
+    @spending_money = spending_money
     @interests = []
 
   end
 
   def name
-    @patron_1
+    @name
 
   end
 
